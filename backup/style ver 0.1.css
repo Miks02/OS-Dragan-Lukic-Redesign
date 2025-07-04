@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Ubuntu';
+}
+
+.header {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 2;
+    background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.logo {
+    width: 2%;
+    margin: 0.5rem;
+}
+
+.navbar {
+    
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+
+}
+
+body {
+    background-color: #d8bab4;
+}
+
+.navbar ul {
+    display: flex;
+  
+}
+
+.navbar ul li {
+    margin-right: 4rem;
+    
+    display: flex;
+}
+
+.navbar ul li a {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #ffff;
+    font-weight: 600;
+    
+}
+
+.navbar ul li a:hover {
+    color: rgba(141, 11, 11, 0.83);
+    transition: all ease 0.5s;
+}
+
+ .header ul .dropdown {
+   
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 4px -2px #333;
+    
+ 
+}
+
+
+.dropdown li  a{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+   
+}
+.dropdown li {
+    margin: 0 1rem 1rem 1rem;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar ul li:hover .dropdown {
+    display: block;
+    padding: 0;
+}
+
+#sidebar-icon {
+    padding: 0;
+    margin: 0;
+    height: 0;
+}
+
+#sidebar-icon  svg:hover {
+    fill: rgba(141, 11, 11, 0.83);
+    transition: all ease 0.5s;
+}
+
+#sidebar-close svg:hover {
+    fill: rgba(141, 11, 11, 0.83);
+    transition: all ease 0.5s;
+}
+
+.navbar .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 500px;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: red;
+    background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    box-shadow: 0 0 5px #333;
+}
+ .header .navbar .sidebar li :focus-within  , .navbar .sidebar li:hover > ul {
+    display: flex;
+   
+    position: relative;
+    top: 0%;
+    left: 0%;
+    
+}
+
+
+
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/img/Dragan\ Lukic\ -\ pozadinska\ slika.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.introHeading {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    word-spacing: 0.7rem;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 1;
+    
+}
+
+.cardIntro {
+    background-color: #d8bab4;
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
+    width: 50%;
+    height: 60vh;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    border-radius: 20px;
+    box-shadow: 0 0 15px #333;
+    
+
+}
+
+.card-container {
+    height: 20%;
+    display: flex;
+    background-color: #d8bab4;
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0f357c;
+   /*  border-right: 1px solid #c7d8b4 */
+}
+
+.card:hover {
+    opacity: 0.5;
+    background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15));
+    cursor: pointer;
+}
+
+.card img {
+    width: 20%;
+    margin-bottom: 1.5rem;
+    
+}
+
+.schoolInfo {
+    margin: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    color:rgba(46, 25, 5, 0.959)
+}
+
+.imgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 10%;
+}
+
+.imgHolder {
+    margin-top: 2rem;
+    text-align: center;
+    color:rgba(46, 25, 5, 0.959);
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    
+}
+
+.imgHolder img {
+
+    box-shadow: 0 0 5px #333;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.8rem;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #B4D2D8;
+    box-shadow: 0 -5px 5px -5px #333;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerCol {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    
+    
+}
+
+.footerCol h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.footerCol ul li a{
+    display: flex;
+    color: #08272d;
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footerCol ul li a:hover {
+    opacity: 0.5;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    border-top: 2px solid #80B3BD;
+
+}
+
+.footer-icons img {
+    width: 1.5%;
+    margin: 0 1rem 0 1rem;
+}
+
+.footer-copyright {
+    padding: 0.6rem;
+    text-align: left;
+    background-color: #80B3BD;
+    color: #08272d;
+}
+
+
+
